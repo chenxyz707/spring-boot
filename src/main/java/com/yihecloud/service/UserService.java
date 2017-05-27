@@ -1,7 +1,6 @@
 package com.yihecloud.service;
 
-import com.yihecloud.User;
-import org.springframework.stereotype.Service;
+import com.yihecloud.dto.User;
 
 import java.util.List;
 
@@ -20,5 +19,7 @@ public interface UserService {
     User getUser(String id);
 
     List<User> queryUsers();
+
+    int addUser(User user);
 
 }

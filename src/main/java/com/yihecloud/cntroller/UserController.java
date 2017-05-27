@@ -1,6 +1,6 @@
 package com.yihecloud.cntroller;
 
-import com.yihecloud.User;
+import com.yihecloud.dto.User;
 import com.yihecloud.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -41,5 +41,12 @@ public class UserController {
     @ResponseBody
     public List<User> queryUsers() {
         return userService.queryUsers();
+    }
+
+    @RequestMapping("addUser")
+    @ResponseBody
+    public int addUser() {
+        User user = new User("1", "chenlinchao", 20);
+        return userService.addUser(user);
     }
 }

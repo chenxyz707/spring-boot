@@ -1,4 +1,4 @@
-package com.yihecloud;
+package com.yihecloud.dto;
 
 /**
  * Description

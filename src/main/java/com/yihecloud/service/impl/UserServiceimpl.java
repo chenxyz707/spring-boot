@@ -1,7 +1,9 @@
 package com.yihecloud.service.impl;
 
-import com.yihecloud.User;
+import com.yihecloud.dao.UserDao;
+import com.yihecloud.dto.User;
 import com.yihecloud.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -17,6 +19,10 @@ import java.util.List;
  */
 @Service
 public class UserServiceimpl implements UserService {
+
+    @Autowired
+    private UserDao userDao;
+
 
     @Override
     public String sayHello(String name) {
@@ -41,5 +47,10 @@ public class UserServiceimpl implements UserService {
         list.add(new User("2", "Hack", 13));
         list.add(new User("3", "Jimmy", 16));
         return list;
+    }
+
+    @Override
+    public int addUser(User user) {
+        return userDao.add(user);
     }
 }
