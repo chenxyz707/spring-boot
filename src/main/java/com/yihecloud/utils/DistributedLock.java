@@ -16,10 +16,9 @@ import java.util.concurrent.CountDownLatch;
 /**
  * Description
  *
- * @author chenlinchao
+ * @author chenxyz
  * @version 1.0
  * @date 2017-05-24
- * Copyright 青海粮食云项目组
  */
 public class DistributedLock implements Watcher{
     private int threadId;

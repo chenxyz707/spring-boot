@@ -6,10 +6,9 @@ import org.springframework.stereotype.Repository;
 /**
  * Description
  *
- * @author chenlinchao
+ * @author chenxyz
  * @version 1.0
  * @date 2017-05-27
- * Copyright 青海粮食云项目组
  */
 @Repository
 public interface UserDao {

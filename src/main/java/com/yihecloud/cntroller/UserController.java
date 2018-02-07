@@ -12,10 +12,9 @@ import java.util.List;
 /**
  * Description
  *
- * @author chenlinchao
+ * @author chenxyz
  * @version 1.0
  * @date 2017-05-05
- * Copyright 青海粮食云项目组
  */
 @Controller
 @RequestMapping("")
@@ -46,7 +45,7 @@ public class UserController {
     @RequestMapping("addUser")
     @ResponseBody
     public int addUser() {
-        User user = new User("1", "chenlinchao", 20);
+        User user = new User(null, "chenxyz", 20);
         return userService.addUser(user);
     }
 }

@@ -16,6 +16,9 @@
     </sql>
 
     <insert id="add" parameterType="com.yihecloud.dto.User">
+        <selectKey keyColumn="id" keyProperty="id" resultType="String" order="BEFORE">
+            select replace(uuid(), '-', '')
+        </selectKey>
         <!-- 插入 -->
         INSERT INTO tb_user
         (

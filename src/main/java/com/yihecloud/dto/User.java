@@ -3,10 +3,9 @@ package com.yihecloud.dto;
 /**
  * Description
  *
- * @author chenlinchao
+ * @author chenxyz
  * @version 1.0
  * @date 2017-05-05
- * Copyright 青海粮食云项目组
  */
 public class User {
 
