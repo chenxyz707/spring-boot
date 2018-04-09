@@ -1,0 +1,23 @@
+
+spring:
+  resources:
+    staticLocations: classpath:/html/
+  datasource:
+      url: jdbc:mysql://localhost:3306/test
+      username: chenxyz
+      password: 123
+      type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.mysql.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.yihecloud
+
+logging:
+    level:
+        root:warn
+    org:
+        springframework:
+            web: debug
+        mybatis: debug

@@ -26,7 +26,6 @@ public class UserController {
     @RequestMapping("/sayHello")
     @ResponseBody
     public String sayHello(String name){
-        System.out.println("=========sayHello=======");
         return userService.sayHello(name);
     }
 
